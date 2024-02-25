@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name" translatable="false">Components</string>
+    <string name="registration_form">إستمارة تسجيل</string>
+    <string name="first_name">الاسم الأول</string>
+    <string name="last_name">اسم العائلة</string>
+    <string name="male">ذكر</string>
+    <string name="female">أنثى</string>
+    <string name="submit">يُقدِّم</string>
+    <string name="remember_me">تذكرنى</string>
+</resources>

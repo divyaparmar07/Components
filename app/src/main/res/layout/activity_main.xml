@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+        android:padding="16dp"
+        android:scrollbarSize="25dp"
+        tools:ignore="MissingDefaultResource">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/titleText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="16dp"
+                android:text="@string/registration_form"
+                android:textSize="24sp" />
+
+            <EditText
+                android:id="@+id/firstNameEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/titleText"
+                android:layout_marginTop="16dp"
+                android:hint="@string/first_name" />
+
+            <EditText
+                android:id="@+id/lastNameEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/firstNameEditText"
+                android:layout_marginTop="16dp"
+                android:hint="@string/last_name" />
+
+            <RadioGroup
+                android:id="@+id/genderRadioGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/lastNameEditText"
+                android:layout_marginTop="16dp">
+
+                <RadioButton
+                    android:id="@+id/maleRadioButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/male" />
+
+                <RadioButton
+                    android:id="@+id/femaleRadioButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/female" />
+            </RadioGroup>
+
+            <CheckBox
+                android:id="@+id/rememberCheckBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/genderRadioGroup"
+                android:layout_marginTop="16dp"
+                android:text="@string/remember_me" />
+
+            <Spinner
+                android:id="@+id/countrySpinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rememberCheckBox"
+                android:layout_marginTop="16dp" />
+
+            <SeekBar
+                android:id="@+id/ageSeekBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/countrySpinner"
+                android:layout_marginTop="16dp" />
+
+            <Button
+                android:id="@+id/submitButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ageSeekBar"
+                android:layout_marginTop="24dp"
+                android:text="@string/submit" />
+            <!--    <TextView-->
+            <!--        android:id="@+id/mainText"-->
+            <!--        android:layout_width="wrap_content"-->
+            <!--        android:layout_height="wrap_content"-->
+            <!--        android:text="Hello, Responsive UI!"-->
+            <!--        android:textSize="20sp"-->
+            <!--        android:layout_centerHorizontal="true"-->
+            <!--        android:layout_marginBottom="16dp" />-->
+
+            <!--    <EditText-->
+            <!--        android:id="@+id/editText"-->
+            <!--        android:layout_width="match_parent"-->
+            <!--        android:layout_height="wrap_content"-->
+            <!--        android:hint="Enter text"-->
+            <!--        android:layout_below="@id/mainText"-->
+            <!--        android:layout_marginTop="16dp" />-->
+
+            <!--    <Button-->
+            <!--        android:id="@+id/button"-->
+            <!--        android:layout_width="wrap_content"-->
+            <!--        android:layout_height="wrap_content"-->
+            <!--        android:text="Click Me!"-->
+            <!--        android:layout_below="@id/editText"-->
+            <!--        android:layout_marginTop="16dp" />-->
+
+            <!--    <ImageView-->
+            <!--        android:id="@+id/imageView"-->
+            <!--        android:layout_width="wrap_content"-->
+            <!--        android:layout_height="wrap_content"-->
+            <!--        android:src="@drawable/ic_launcher_foreground"-->
+            <!--        android:layout_below="@id/button"-->
+            <!--        android:layout_marginTop="16dp"-->
+            <!--        android:layout_centerHorizontal="true" />-->
+
+            <!--    <CheckBox-->
+            <!--        android:id="@+id/checkBox"-->
+            <!--        android:layout_width="wrap_content"-->
+            <!--        android:layout_height="wrap_content"-->
+            <!--        android:text="Check me"-->
+            <!--        android:layout_below="@id/imageView"-->
+            <!--        android:layout_marginTop="16dp" />-->
+
+            <!--    <RadioButton-->
+            <!--        android:id="@+id/radioButton"-->
+            <!--        android:layout_width="wrap_content"-->
+            <!--        android:layout_height="wrap_content"-->
+            <!--        android:text="Radio me"-->
+            <!--        android:layout_below="@id/checkBox"-->
+            <!--        android:layout_marginTop="16dp" />-->
+
+            <!--    <ToggleButton-->
+            <!--        android:id="@+id/toggleButton"-->
+            <!--        android:layout_width="wrap_content"-->
+            <!--        android:layout_height="wrap_content"-->
+            <!--        android:text="Toggle me"-->
+            <!--        android:layout_below="@id/radioButton"-->
+            <!--        android:layout_marginTop="16dp" />-->
+
+            <!--    <Spinner-->
+            <!--        android:id="@+id/spinner"-->
+            <!--        android:layout_width="wrap_content"-->
+            <!--        android:layout_height="wrap_content"-->
+            <!--        android:layout_below="@id/toggleButton"-->
+            <!--        android:layout_marginTop="16dp" />-->
+
+            <!--    <SeekBar-->
+            <!--        android:id="@+id/seekBar"-->
+            <!--        android:layout_width="match_parent"-->
+            <!--        android:layout_height="wrap_content"-->
+            <!--        android:layout_below="@id/spinner"-->
+            <!--        android:layout_marginTop="16dp" />-->
+
+            <!--    <RatingBar-->
+            <!--        android:layout_width="wrap_content"-->
+            <!--        android:layout_height="wrap_content"-->
+            <!--        android:numStars="5"/>-->
+            <!--    <SearchView style="@android:style/Animation.Activity"-->
+
+            <!--    <HorizontalScrollView-->
+            <!--        android:layout_width="match_parent"-->
+            <!--        android:layout_height="match_parent"/>-->
+
+            <!--    <TextClock-->
+            <!--        android:layout_width="match_parent"-->
+            <!--        android:layout_height="match_parent"-->
+            <!--        android:text="@string/app_name"-->
+            <!--        android:height="@dimen/cardview_compat_inset_shadow"-->
+            <!--        android:textSize="40dp"-->
+            <!--        />-->
+            <!--    <ZoomControls-->
+            <!--        android:layout_width="match_parent"-->
+            <!--        android:layout_height="match_parent"/>-->
+
+            <!--    <DigitalClock-->
+            <!--        android:layout_width="match_parent"-->
+            <!--        android:layout_height="wrap_content"-->
+            <!--        android:textSize="40dp"/>-->
+
+            <!--    <SeekBar-->
+            <!--        android:layout_width="250dp"-->
+            <!--        android:layout_height="150dp"-->
+            <!--        />-->
+
+            <!--    <NumberPicker-->
+            <!--        android:layout_width="match_parent"-->
+            <!--        android:layout_height="wrap_content"/>-->
+
+            <!--    <RadioGroup-->
+            <!--        android:layout_width="match_parent"-->
+            <!--        android:layout_height="wrap_content">-->
+
+            <!--        <RadioButton-->
+            <!--            android:layout_width="match_parent"-->
+            <!--            android:layout_height="wrap_content"-->
+            <!--            android:text="a" />-->
+
+            <!--        <RadioButton-->
+            <!--            android:layout_width="match_parent"-->
+            <!--            android:layout_height="wrap_content"-->
+            <!--            android:text="b" />-->
+            <!--    </RadioGroup>-->
+
+            <!--    <TimePicker-->
+            <!--        android:layout_width="match_parent"-->
+            <!--        android:layout_height="match_parent"/>-->
+
+            <!--    <TextView-->
+            <!--        android:layout_width="match_parent"-->
+            <!--        android:layout_height="wrap_content"-->
+            <!--        android:layout_margin="10dp"-->
+            <!--        android:text="Example Of Include"-->
+            <!--        android:textAlignment="center"-->
+            <!--        android:textSize="20dp"-->
+            <!--        tools:ignore="MissingConstraints"-->
+            <!--        tools:layout_editor_absoluteX="9dp"-->
+            <!--        tools:layout_editor_absoluteY="26dp" />-->
+
+            <!--    <Button-->
+            <!--        android:layout_width="wrap_content"-->
+            <!--        android:layout_height="wrap_content"-->
+            <!--        android:text="Button" />-->
+
+            <!--    <ImageView-->
+            <!--        android:layout_width="wrap_content"-->
+            <!--        android:layout_height="wrap_content"-->
+            <!--        android:layout_gravity="center"-->
+            <!--        android:src="@drawable/ic_launcher_background" />-->
+
+            <!--    <ImageButton-->
+            <!--        android:layout_width="wrap_content"-->
+            <!--        android:layout_height="wrap_content"-->
+            <!--        android:contentDescription="@string/app_name"-->
+            <!--        android:src="@drawable/ic_launcher_background" />-->
+
+            <!--    <include-->
+            <!--        android:id="@+id/custom1"-->
+            <!--        layout="@layout/custom_layout"-->
+            <!--        android:layout_width="match_parent"-->
+            <!--        android:layout_height="wrap_content" />-->
+            <!--    />-->
+
+            <!--    <include-->
+            <!--        android:id="@+id/custom2"-->
+            <!--        layout="@layout/custom_layout"-->
+            <!--        android:layout_width="match_parent"-->
+            <!--        android:layout_height="wrap_content" />-->
+            <!--    />-->
+
+
+            <!--    <TextView-->
+            <!--        android:layout_width="wrap_content"-->
+            <!--        android:layout_height="wrap_content"-->
+            <!--        android:text="Hello World!"-->
+            <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+            <!--        app:layout_constraintEnd_toEndOf="parent"-->
+            <!--        app:layout_constraintStart_toStartOf="parent"-->
+            <!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+            <!--    <DatePicker-->
+            <!--        android:layout_width="wrap_content"-->
+            <!--        android:layout_height="wrap_content"/>-->
+
+            <!--    <Switch-->
+            <!--        android:layout_width="wrap_content"-->
+            <!--        android:layout_height="wrap_content"-->
+            <!--        android:text="Yes"-->
+            <!--        tools:layout_editor_absoluteX="148dp"-->
+            <!--        tools:layout_editor_absoluteY="166dp" />-->
+
+            <!--    <androidx.appcompat.widget.AppCompatButton-->
+            <!--        android:layout_width="wrap_content"-->
+            <!--        android:layout_height="wrap_content"-->
+            <!--        android:text="@string/app_name"-->
+            <!--        tools:layout_editor_absoluteX="136dp"-->
+            <!--        tools:layout_editor_absoluteY="82dp" />-->
+
+            <!--    <androidx.appcompat.widget.AppCompatCheckBox-->
+            <!--        android:layout_width="wrap_content"-->
+            <!--        android:layout_height="wrap_content"-->
+            <!--        android:text="@string/app_name"-->
+            <!--        tools:layout_editor_absoluteX="148dp"-->
+            <!--        tools:layout_editor_absoluteY="226dp" />-->
+
+            <!--    <androidx.appcompat.widget.AppCompatSpinner-->
+            <!--        android:layout_width="wrap_content"-->
+            <!--        android:layout_height="wrap_content"-->
+            <!--        tools:layout_editor_absoluteX="181dp"-->
+            <!--        tools:layout_editor_absoluteY="308dp"-->
+            <!--        />-->
+
+            <!--    <androidx.appcompat.widget.AppCompatToggleButton-->
+            <!--        android:layout_width="wrap_content"-->
+            <!--        android:layout_height="wrap_content"-->
+            <!--        tools:layout_editor_absoluteX="166dp"-->
+            <!--        tools:layout_editor_absoluteY="356dp" />-->
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>
